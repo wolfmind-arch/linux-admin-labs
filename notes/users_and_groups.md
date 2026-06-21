@@ -52,6 +52,12 @@ groups
 
 ```bash
 cat /etc/passwd
+
+show only usernames
+cut -d: -f1 /etc/passwd
+
+show user by name
+grep "^john:" /etc/passwd
 ```
 
 ## Show All Groups
@@ -77,6 +83,12 @@ sudo command
 ```bash
 chown anna:developers file.txt
 ```
+## File assing group
+
+```bash
+sudo chgrp developers file.txt
+```
+
 
 ## Permissions
 
